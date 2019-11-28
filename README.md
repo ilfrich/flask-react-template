@@ -36,6 +36,7 @@ component hierarchies
 - **Moment.JS** the standard library for date/time handling in JavaScript
 - **S Alert** a basic notification library 
 - **ESLint** and **Prettier** for linting Javascript code and auto-format
+- Custom **Basic Utilities** and **Style Mixins** (see `frontend/src/util.js` and `frontend/src/mixins.js`)
 
 ## Customisation
 
