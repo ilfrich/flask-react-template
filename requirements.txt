@@ -1,0 +1,9 @@
+pytz
+flask
+setuptools
+python-dotenv
+pbu==0.5.1
+
+# TODO: choose your database
+pymongo
+mysql-connector-python
