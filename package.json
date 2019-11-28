@@ -1,8 +1,7 @@
 {
-  "name": "bike-app",
+  "name": "example-app",
   "version": "1.0.0",
-  "description": "Application to visualise bike sensor tracking data",
-  "main": "index.js",
+  "description": "Example React Application",
   "scripts": {
     "test": "",
     "build": "webpack -p",
@@ -13,9 +12,9 @@
   },
   "repository": {
     "type": "git",
-    "url": "git@github.ibm.com:aur-hack/bike-app.git"
+    "url": "git@github.com:ilfrich/flask-react-template.git"
   },
-  "author": "Michael Raghib, Simon Wail, Wanita Sherchan, Allison Irvin, Peter Ilfrich",
+  "author": "Peter Ilfrich",
   "license": "Apache-2.0",
   "devDependencies": {
     "@babel/core": "^7.2.2",
@@ -47,7 +46,6 @@
     "@fortawesome/fontawesome-svg-core": "^1.2.17",
     "@fortawesome/free-solid-svg-icons": "^5.8.1",
     "@fortawesome/react-fontawesome": "^0.1.4",
-    "csvtojson": "^2.0.10",
     "jsx": "^0.9.89",
     "moment": "^2.24.0",
     "moment-timezone": "^0.5.27",
@@ -56,7 +54,6 @@
     "plotly.js-basic-dist": "^1.47.4",
     "react": "^16.9.0",
     "react-dom": "^16.9.0",
-    "react-leaflet": "^2.3.0",
     "react-plotly.js": "^2.3.0",
     "react-redux": "^7.1.1",
     "react-responsive": "^7.0.0",

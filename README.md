@@ -1,10 +1,12 @@
-# Bike Sensor App
+# Flask + React Project Template
 
-Frontend and Backend for the Cloud Component of the Bike Sensor Project
+Project template / boilerplate for a micro-service providing endpoints via Flask (Python) and a frontend via React 
+(JavaScript).
 
 **Table of Contents**
 
 1. [Requirements](#requirements)
+    1. [Tech Stack](#tech-stack)
 2. [Customisation](#customisation)
 3. [Installation](#installation)
 4. [Running the App](#running-the-app)
@@ -15,6 +17,25 @@ Frontend and Backend for the Cloud Component of the Bike Sensor Project
 - Python3.6+
 - NodeJS / npm
 - MongoDB **or** MySQL
+
+### Tech Stack
+
+**Backend**
+
+- **Flask** framework for hosting API endpoints and delivering the frontend
+- **pymongo** for MongoDB access
+- **mysql-connector-python** for MySQL access
+
+**Frontend**
+
+- **React** basic framework for the frontend
+- **Redux** a global store for the frontend, used for data exchange with the API and to avoid handing down data through
+component hierarchies
+- **Webpack** and **Babel** to transpile the frontend into a single `index.js`, which gets included by the `index.html`
+- **Plotly.JS** a Javascript adaptation of the popular Python charting library Plotly
+- **Moment.JS** the standard library for date/time handling in JavaScript
+- **S Alert** a basic notification library 
+- **ESLint** and **Prettier** for linting Javascript code and auto-format
 
 ## Customisation
 
@@ -57,6 +78,12 @@ confusion:
 `reducers.js`
 - `frontend/src/containers/LandingPage` - remove connection to example store (see the `@connect` section) and remove the
 dispatch of the `getExamples()` event in the `componentDidMount()` hook.
+
+**Change Frontend Title**
+
+The template for the index.html is located here: `frontend/index.html`.
+Webpack will use that file and inject the script which represents the transpiled frontend. Note: the 
+`templates/index.html` is created by Webpack and will be overwritten every time the frontend compiles.
 
 ## Installation
 
