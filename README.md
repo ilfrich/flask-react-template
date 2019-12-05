@@ -126,7 +126,7 @@ npm run build
 This will produce an index.js containing all the frontend code in the `/static` directory and put the index.html in the 
 `/templates` folder. Those 2 directories are used by the Flask app to deliver the frontend components.
 
-To run the backend, simply execute:
+The backend's entry point is the script `runner.py` on the root of the project. To run the backend, simply execute:
 
 ```bash
 make start
