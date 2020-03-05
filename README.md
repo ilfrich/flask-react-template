@@ -132,7 +132,7 @@ The backend's entry point is the script `runner.py` on the root of the project. 
 make start
 ```
 
-Again, if you Python binary differs from `python3`, simply run:
+Again, if your Python binary differs from `python3`, simply run:
 
 ```bash
 python runner.py
