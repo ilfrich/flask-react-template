@@ -12,7 +12,7 @@ const style = {
     },
 }
 
-const InsideApp = () => (
+const InsideApp = withRouter(() => (
     <div>
         <Alert stack={{ limit: 3 }} html />
         <div style={style.main}>
@@ -21,7 +21,7 @@ const InsideApp = () => (
             </Switch>
         </div>
     </div>
-)
+))
 
 const App = () => (
     <BrowserRouter>
