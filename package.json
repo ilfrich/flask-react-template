@@ -1,10 +1,10 @@
 {
-  "name": "playbook-app",
+  "name": "example-app",
   "version": "1.0.0",
-  "description": "Playbook React Application",
+  "description": "Example React Application",
   "scripts": {
     "test": "",
-    "build": "webpack -p --max-old-space-size=4096",
+    "build": "webpack -p",
     "lint": "eslint \"**/*.{js,mjs}\"",
     "format": "eslint --fix \"**/*.{js,mjs}\"",
     "hot-client": "webpack -d --watch",
@@ -12,7 +12,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git@github.ibm.com:aur-playbook/flask-react-template.git"
+    "url": "git@github.com:ilfrich/flask-react-template.git"
   },
   "author": "Peter Ilfrich",
   "license": "Apache-2.0",
@@ -43,18 +43,28 @@
     "webpack-cli": "^3.2.3"
   },
   "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^1.2.17",
+    "@fortawesome/free-solid-svg-icons": "^5.8.1",
+    "@fortawesome/react-fontawesome": "^0.1.4",
     "@ibmau/react-authentication": "^1.1.1",
     "@ibmau/react-content": "^1.1.0",
     "@ibmau/react-datasets": "^1.1.0",
     "jsx": "^0.9.89",
     "moment": "^2.24.0",
     "moment-timezone": "^0.5.27",
+    "npm": "^6.9.0",
+    "plotly.js": "^1.47.4",
+    "plotly.js-basic-dist": "^1.47.4",
     "quick-n-dirty-react": "0.0.5",
     "quick-n-dirty-utils": "0.0.3",
     "react": "^16.9.0",
     "react-dom": "^16.9.0",
+    "react-plotly.js": "^2.3.0",
+    "react-redux": "^7.1.1",
     "react-router": "^5.0.1",
     "react-router-dom": "^5.0.1",
-    "react-s-alert": "^1.4.1"
+    "react-s-alert": "^1.4.1",
+    "redux": "^4.0.4",
+    "redux-promise-middleware": "^5.1.1"
   }
 }
