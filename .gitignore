@@ -1,6 +1,7 @@
 .env
 /.idea
 /_logs
+/_data
 /static/*
 !/static/favicon.png
 /templates/index.html

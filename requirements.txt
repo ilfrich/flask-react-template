@@ -2,8 +2,15 @@ pytz
 flask
 setuptools
 python-dotenv
-pbu==0.5.1
+pbu==0.6.4
 
-# TODO: choose your database
 pymongo
-mysql-connector-python
+# mysql-connector-python
+
+# playbook modules
+ibmmongouser
+ibmmongocontent
+ibmmongodataset
+ibmflaskauth
+ibmflaskcontent
+ibmflaskdataset
