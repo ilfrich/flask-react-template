@@ -88,6 +88,9 @@ Webpack will use that file and inject the script which represents the transpiled
 
 ## Installation
 
+In order to install the required PIP (backend) and NPM (frontend) packages, you need to set up access to Artifactory, a
+ process described in [this guide](https://github.ibm.com/aur/devops/blob/master/pip-npm-artifactory.md).
+
 First, try to run:
 
 ```bash
