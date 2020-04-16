@@ -8,9 +8,6 @@ def register_endpoints(app):
     :param app: the flask app
     """
     @app.route("/", methods=["GET"])
-    @app.route("/admin/user", methods=["GET"])
-    @app.route("/admin/data", methods=["GET"])
-    @app.route("/admin/content", methods=["GET"])
     def get_index():
         """
         Each call to the API, which doesn't start with `/api` will be covered by this function providing the index.html
