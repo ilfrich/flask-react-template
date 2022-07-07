@@ -47,7 +47,7 @@
     "@fortawesome/free-solid-svg-icons": "^5.8.1",
     "@fortawesome/react-fontawesome": "^0.1.4",
     "jsx": "^0.9.89",
-    "moment": "^2.24.0",
+    "moment": "^2.29.4",
     "moment-timezone": "^0.5.27",
     "npm": "^6.9.0",
     "plotly.js": "^1.47.4",
