@@ -48,7 +48,7 @@
     "@fortawesome/react-fontawesome": "^0.1.4",
     "jsx": "^0.9.89",
     "moment": "^2.24.0",
-    "moment-timezone": "^0.5.27",
+    "moment-timezone": "^0.5.35",
     "npm": "^6.9.0",
     "plotly.js": "^1.47.4",
     "plotly.js-basic-dist": "^1.47.4",
