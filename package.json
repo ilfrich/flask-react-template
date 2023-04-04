@@ -4,10 +4,10 @@
   "description": "Example React Application",
   "scripts": {
     "test": "",
-    "build": "webpack -p",
+    "build": "webpack --mode=production",
     "lint": "eslint \"**/*.{js,mjs}\"",
     "format": "eslint --fix \"**/*.{js,mjs}\"",
-    "hot-client": "webpack --watch",
+    "hot-client": "webpack --watch --mode=development",
     "clean": "rm -rf static/* && rm -rf templates/"
   },
   "repository": {

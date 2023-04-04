@@ -20,7 +20,6 @@ const HotModuleReplacementPluginConfig = new webpack.HotModuleReplacementPlugin(
 // See https://medium.com/@kimberleycook/intro-to-webpack-1d035a47028d#.8zivonmtp for
 // a step-by-step introduction to reading a webpack config
 const config = {
-    mode: "development",
     entry: `${APP_DIR}/index.js`,
     output: {
         path: BUILD_DIR,
