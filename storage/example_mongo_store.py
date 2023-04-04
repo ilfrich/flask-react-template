@@ -1,29 +1,22 @@
-from pbu import AbstractMongoStore
+from pbumongo import AbstractMongoStore
+from pbu import JsonDocument
 
 
-class Example:
+class Example(JsonDocument):
     """
     Object class representing a document in this database collection.
     """
 
     def __init__(self):
+        super().__init__()
         self.field_a = None
         self.field_b = None
-        self.id = None
 
-    def to_json(self):
-        """
-        Serialises the current instance into JSON
-        :return: a dictionary containing the fields and values of this instance
-        """
-        result = {}
-        if self.field_a is not None:
-            result["fieldA"] = self.field_a
-        if self.field_b is not None:
-            result["fieldB"] = self.field_b
-        if self.id is not None:
-            result["_id"] = self.id
-        return result
+    def get_attribute_mapping(self) -> dict:
+        return {
+            "field_a": "fieldA",
+            "field_b": "fieldB",
+        }
 
     @staticmethod
     def from_json(json):
@@ -33,12 +26,7 @@ class Example:
         :return: a representation of a row object
         """
         result = Example()
-        if "fieldA" in json:
-            result.field_a = json["fieldA"]
-        if "fieldB" in json:
-            result.field_b = json["fieldB"]
-        if "_id" in json:
-            result.id = json["_id"]
+        result.extract_system_fields(json)
         return result
 
 

@@ -1,8 +1,6 @@
 import React from "react"
-import Alert from "react-s-alert"
-import { Route, Switch, withRouter } from "react-router"
-import { BrowserRouter } from "react-router-dom"
-import "react-s-alert/dist/s-alert-default.css"
+import { Route } from "react-router"
+import { RouterProvider, createBrowserRouter, createRoutesFromElements } from "react-router-dom"
 import LandingPage from "./LandingPage"
 
 
@@ -12,21 +10,17 @@ const style = {
     },
 }
 
-const InsideApp = withRouter(() => (
+const App = () => (
     <div>
-        <Alert stack={{ limit: 3 }} html />
         <div style={style.main}>
-            <Switch>
-                <Route path="/" exact component={LandingPage} />
-            </Switch>
+            <RouterProvider router={createBrowserRouter(
+                createRoutesFromElements(
+                    <Route path="/" element={<LandingPage />}>
+                    </Route>
+                )
+            )} />
         </div>
     </div>
-))
-
-const App = () => (
-    <BrowserRouter>
-        <InsideApp />
-    </BrowserRouter>
 )
 
 export default App

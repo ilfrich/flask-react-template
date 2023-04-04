@@ -1,6 +1,6 @@
 from flask import Flask
 # TODO: clean up unused imports
-from pbu import Logger, MysqlConnection
+from pbu import Logger
 from config import load_config, get_log_folder, get_mongodb_config, get_mysql_config
 from storage.example_mongo_store import ExampleStore as ExampleMongoStore
 from storage.example_mysql_store import ExampleStore as ExampleMysqlStore

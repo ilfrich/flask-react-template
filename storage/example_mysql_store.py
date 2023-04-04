@@ -1,4 +1,4 @@
-from pbu import AbstractMysqlStore
+from pbumysql import AbstractMysqlStore
 from pkg_resources import resource_string
 
 '''

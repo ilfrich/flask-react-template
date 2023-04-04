@@ -11,11 +11,7 @@ import {
     faCheck,
     faTimes,
 } from "@fortawesome/free-solid-svg-icons"
-import { render } from "react-dom"
-import { createStore, applyMiddleware, compose } from "redux"
-import { Provider } from "react-redux"
-import promiseMiddleware from "redux-promise-middleware"
-import reducer from "./redux/reducers"
+import { createRoot } from "react-dom/client"
 import App from "./containers/App"
 
 // configure fontawesome
@@ -24,14 +20,6 @@ icons.forEach(icon => {
     library.add(icon)
 })
 
-// create redux store with root reducer and middleware stack
-const composeEnhancers = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose // eslint-disable-line no-underscore-dangle
-const store = createStore(reducer, composeEnhancers(applyMiddleware(promiseMiddleware())))
-
-render(
-    <Provider store={store}>
-        <App />
-    </Provider>,
-
-    document.getElementById("root")
+createRoot(document.getElementById("root")).render(
+    <App />
 )

@@ -2,8 +2,7 @@ pytz
 flask
 setuptools
 python-dotenv
-pbu>=0.6.6
+pbu>=1.0.1
+pbumongo>=1.0.1
 
-# TODO: choose your database
-pymongo
-mysql-connector-python
+# pbumysql
