@@ -1,6 +1,7 @@
 # folders
 node_modules/
 _logs/
+_data/
 controller/
 api/
 storage/
